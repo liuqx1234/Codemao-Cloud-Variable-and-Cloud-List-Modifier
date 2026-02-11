@@ -9,7 +9,6 @@ def send_msg(start_id,end_id,json,client_sendMsg):
     global bcmcloud_worker
     max_end_time = time.time()+25#设置与客户端交流的最大时间
     for i in range(start_id,end_id):
-        time.sleep(0.5)
         if i%2==1:
             msg = "get_msg_done&"+client_sendMsg[1]+"&"+msg_list[i]
         else:
@@ -94,15 +93,14 @@ def cloud_work():#每隔10秒修改最大页数
 if __name__ == "__main__":
     config = \
     {
-        "phone_number":"您的编程猫登录用的手机号码",
-        "password":"您的编程猫登录密码",
-        "work":"257509128"
+        "phone_number": "18508106180",
+        "password": "Yhy3370955",
+        "work": "257509128"
     }
     bcmcloud_worker = bcmcloud.codemao_cloud(config)
-    bcmcloud_worker.SPEED = 2#设置登录速度
     threading.Thread(target=cloud_work).start()
 
     #绑定列表名称为event_ls的replace(替换)事件，处理函数为handle_listEvent
-    bcmcloud_worker.bind("event_ls-replace",handle_listEvent,"list_name")
+    bcmcloud_worker.bind("event_ls-replace", handle_listEvent, "list_name")
 
     bcmcloud_worker.run()
