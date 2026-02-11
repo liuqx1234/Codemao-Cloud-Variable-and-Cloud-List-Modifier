@@ -141,5 +141,4 @@ config = \
 }
 bcmcloud_worker = bcmcloud.codemao_cloud(config)
 threading.Thread(target=work).start()
-
 bcmcloud_worker.run()

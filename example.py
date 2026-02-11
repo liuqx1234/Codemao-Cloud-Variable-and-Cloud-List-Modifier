@@ -104,4 +104,3 @@ if __name__ == "__main__":
     bcmcloud_worker.bind("event_ls-replace", handle_listEvent, "list_name")
 
     bcmcloud_worker.run()
-
