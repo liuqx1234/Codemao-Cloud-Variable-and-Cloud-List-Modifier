@@ -93,8 +93,8 @@ def cloud_work():#每隔10秒修改最大页数
 if __name__ == "__main__":
     config = \
     {
-        "phone_number": "18508106180",
-        "password": "Yhy3370955",
+        "phone_number": "你的手机号",
+        "password": "你的密码",
         "work": "257509128"
     }
     bcmcloud_worker = bcmcloud.codemao_cloud(config)
@@ -104,3 +104,4 @@ if __name__ == "__main__":
     bcmcloud_worker.bind("event_ls-replace", handle_listEvent, "list_name")
 
     bcmcloud_worker.run()
+
