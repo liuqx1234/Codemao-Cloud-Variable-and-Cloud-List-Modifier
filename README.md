@@ -15,4 +15,4 @@
 5. 支持一键查看共有云变量和共有云列表的所有数据
 6. 支持获取在线人数
 
-更多内容请移步至https://sclqx.top/article/7
+更多内容请移步至https://sclqx.top/article/8
