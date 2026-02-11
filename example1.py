@@ -135,10 +135,11 @@ def work():
 
 config = \
 {
-    "phone_number": "18508106180",
-    "password": "Yhy3370955",
+    "phone_number": "你的手机号",
+    "password": "你的密码",
     "work": "304104073"
 }
 bcmcloud_worker = bcmcloud.codemao_cloud(config)
 threading.Thread(target=work).start()
+
 bcmcloud_worker.run()
